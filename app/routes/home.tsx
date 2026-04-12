@@ -1,3 +1,4 @@
+
 import type { Route } from "./+types/home";
 import Navbar from "~/components/Navbar";
 import {resumes} from "../../constants";
@@ -22,7 +23,7 @@ export default function Home() {
     }, [auth.isAuthenticated]);
 
 
-    return <main className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-cove">
+    return <main className="bg-[url('/images/bg-auth.svg')] bg-cover">
         <Navbar/>
 
         <section className="main-section">
